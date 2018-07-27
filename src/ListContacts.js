@@ -15,8 +15,9 @@ class ListContacts extends Component {
 
   updateQuery = (query) => {
     this.setState({ query: query.trim() })
-  }
-
+	}
+	
+	/*-- Limpa a busca setando o state query vazio da busca --*/
   clearQuery = () => {
     this.setState({ query: '' })
   }
@@ -46,9 +47,10 @@ class ListContacts extends Component {
             onChange={(event) => this.updateQuery(event.target.value)}
           />
         </div>
-
+				{/*-- Contatos exibidos diferente de  contatos total --*/}
         {showingContacts.length !== contacts.length && (
           <div className='showing-contacts'>
+						{/*-- Exibe quantidade atual de total --*/}
             <span>Now showing {showingContacts.length} of {contacts.length} total</span>
             <button onClick={this.clearQuery}>Show all</button>
           </div>
