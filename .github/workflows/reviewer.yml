@@ -15,6 +15,6 @@ jobs:
 #       uses: madrapps/add-reviewers@v1
       uses: actions-ecosystem/action-add-assignees@v1
       with:
-        github_token: ${{ secrets.SUPER_NAME }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         assignees: ${{ github.actor }}
 
