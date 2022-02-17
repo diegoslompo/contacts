@@ -8,8 +8,6 @@ jobs:
   build:
     if: github.event.label.name == 'bug'
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
     steps:
     - name: Add Reviewers
 #       uses: madrapps/add-reviewers@v1
