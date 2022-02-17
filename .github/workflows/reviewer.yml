@@ -14,5 +14,5 @@ jobs:
 #       uses: madrapps/add-reviewers@v1
       uses: actions-ecosystem/action-add-assignees@v1
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.TOKEN || github.token }}
         assignees: diegoslompo
