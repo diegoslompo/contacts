@@ -8,10 +8,13 @@ jobs:
   build:
     if: github.event.label.name == 'bug'
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
     - name: Add Reviewers
-      uses: madrapps/add-reviewers@v1
+#       uses: madrapps/add-reviewers@v1
+      uses: actions-ecosystem/action-add-assignees@v1
       with:
-        github_token: ${{ secrets.TOKEN }}
-        assignees: diegoslompo
-#       if: contains(github.event.pull_request.labels.*.name, 'bug')
+        github_token: ${{ secrets.SUPER_NAME }}
+        assignees: ${{ github.actor }}
+
