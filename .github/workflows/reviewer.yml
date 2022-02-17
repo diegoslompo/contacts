@@ -11,4 +11,5 @@ jobs:
       if: contains(github.event.pull_request.labels.*.name, 'bug')
       uses: madrapps/add-reviewers@v1
       with:
+        github_token: ${{ secrets.TOKEN }}
         assignees: diegoslompo
