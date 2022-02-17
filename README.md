@@ -51,7 +51,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
   - [Configuring a WebSocket Proxy](#configuring-a-websocket-proxy)
 - [Using HTTPS in Development](#using-https-in-development)
 - [Generating Dynamic `<meta>` Tags on the Server](#generating-dynamic-meta-tags-on-the-server)
-- [Pre-Rendering into Static HTML Files](#pre-rendering-into-static-html-files)
+- [Pre-Rendering into Static HTML Files](#pre-rendering-into-static-html-files) 
 - [Injecting Data from the Server into the Page](#injecting-data-from-the-server-into-the-page)
 - [Running Tests](#running-tests)
   - [Filename Conventions](#filename-conventions)
